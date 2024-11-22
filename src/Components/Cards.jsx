@@ -126,7 +126,7 @@ const Cards = () => {
   const handleClick = (index) => {
     if (index !== prevIndex.current) {
       if (cards[index].status === "active matched") {
-        console.log("already matched");
+        alert("already matched");
       } else {
         if (prevCard === -1) {
           prevIndex.current = index;
@@ -139,7 +139,7 @@ const Cards = () => {
         }
       }
     } else {
-      console.log("card currently selected");
+      alert("card currently selected");
     }
   };
 
